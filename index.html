@@ -9,16 +9,46 @@
         preformateado
         con la etiqueta
             pre
-        </pre>
-        
-        
+        </pre>        
     </div>
     <div>
         <h1>Clase informática 3</h1>
         <h2>Cómo organizar y presentar información</h2>
         <h3>Empecemos por HTML</h3>
     </div>
-    <div>
+    <div class="Padding_test">
+        <h3 >
+            What is Lorem Ipsum?
+
+        </h3>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+    </div>
+    <div class="contenedor">
+        <div class="circulo">
+            1
+        </div>
+        <div class="circulo">
+            2
+        </div>
+        <div class="circulo">
+            3
+        </div>
+        <div class="circulo">
+            4
+        </div>
+        <div class="circulo">
+            5
+        </div>
+        <div class="circulo">
+            6
+        </div>
+        <div class="circulo">
+            7
+        </div>
+
+    </div>
+        <div>
         <h1 class="azul"> Otra etiqueta H1</h1>
     <p>Se usa la tecnología WEB, 
         a través de <small>comunicación</small>       <br>     por internet para tener
@@ -45,8 +75,9 @@ h1{
 }
 img{
     margin-top: 0px;
-    margin-left: 600px !important;
-    position: absolute;
+    margin-left: 600px ;
+    
+    position: relative;
 }
 div{
     background-color: lightblue;
@@ -57,9 +88,31 @@ div{
 .amarillo{
     position: relative;
     color: yellowgreen;
-    margin: 0px 0 300px 30px;
+    margin: 100px;
 }
+.circulo{
+    height: 150px;
+    width: 150px;
+    border-style: solid;
+    border-radius: 75px;
+    position:relative;
 
+}
+.contenedor {
+  display: flex;
+  flex-flow: row wrap;
+  background-color: DodgerBlue;
+  justify-content: space-between;
+  align-items: stretch;
+  min-height: 500px;
+  overflow: hidden;
+}
+.Padding_test{
+    margin:100px;
+    padding: 20px 20px 50px 100px;
+    border-style: solid;
+    border-radius: 30px;
+}
 </style>
 </body>
 </html> 
