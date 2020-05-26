@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
-<title>INFORMATICA III</title>
+    <head>
+        <link rel="stylesheet" href="estilos.css">
+        <title>INFORMATICA III</title>
+    </head>
 <body>
     <div>
         <pre>
@@ -16,7 +19,8 @@
         <h2>Cómo organizar y presentar información</h2>
         <h3>Empecemos por HTML</h3>
     </div>
-    <div class="Padding_test">
+    <button  class="azul" type="button" onclick="document.getElementById('lorem').innerHTML =lorem">Lorem</button>
+    <div class="Padding_test" id="lorem">
         <h3 >
             What is Lorem Ipsum?
 
@@ -24,8 +28,10 @@
         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 
     </div>
-    <div class="contenedor">
-        <div class="circulo">
+    <button class="circulo" type="button" onclick="document.getElementById('contenedor').style.display='flex'">Mostrar</button>
+    <button  class="circulo" type="button" onclick="document.getElementById('contenedor').style.display='none'">Ocultar</button>
+    <div class="contenedor" id="contenedor">
+        <div class="circulo" id="circulo1">
             1
         </div>
         <div class="circulo">
@@ -66,8 +72,9 @@
 
     </div>
 
-<style>
-
-</style>
+    <script>
+        var lorem= document.getElementById("lorem").innerHTML;
+        document.getElementById("lorem").innerHTML = "My First JavaScript";
+    </script>
 </body>
 </html> 
