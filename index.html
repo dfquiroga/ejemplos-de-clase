@@ -5,76 +5,47 @@
         <title>INFORMATICA III</title>
     </head>
 <body>
-    <div>
-        <pre>
-            Este texto
-            está
-        preformateado
-        con la etiqueta
-            pre
-        </pre>        
-    </div>
-    <div>
-        <h1>Clase informática 3</h1>
-        <h2>Cómo organizar y presentar información</h2>
-        <h3>Empecemos por HTML</h3>
-    </div>
-    <button  class="azul" type="button" onclick="document.getElementById('lorem').innerHTML =lorem">Lorem</button>
-    <div class="Padding_test" id="lorem">
-        <h3 >
-            What is Lorem Ipsum?
-
-        </h3>
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-
-    </div>
-    <button class="circulo" type="button" onclick="document.getElementById('contenedor').style.display='flex'">Mostrar</button>
-    <button  class="circulo" type="button" onclick="document.getElementById('contenedor').style.display='none'">Ocultar</button>
-    <div class="contenedor" id="contenedor">
-        <div class="circulo" id="circulo1">
-            1
-        </div>
-        <div class="circulo">
-            2
-        </div>
-        <div class="circulo">
-            3
-        </div>
-        <div class="circulo">
-            4
-        </div>
-        <div class="circulo">
-            5
-        </div>
-        <div class="circulo">
-            6
-        </div>
-        <div class="circulo">
-            7
-        </div>
-
-    </div>
-        <div>
-        <h1 class="azul"> Otra etiqueta H1</h1>
-    <p>Se usa la tecnología WEB, 
-        a través de <small>comunicación</small>       <br>     por internet para tener
-        archivos compartidos de
-         manera publica o privada 
-         según se requiera
-    </p>
-
-
-    </div>
-    <div>
-        <img class="amarillo" src="imagenes/electronica_pw.jpg" alt="">
-        <img src="http://www.pedagogica.edu.co/userfiles/images/home_carin%CC%83o_verdadero.jpg" alt="El cariño" width="104" height="142">
-        <a href="http://www.pedagogica.edu.co">El texto que quiera</a>
-
+    <div class="contenedor">
+            <div  id="num1">
+                <input type="number" class="entrada" id="entrada1">
+            </div>
+            <div  id="num2">
+                <input type="number" class="entrada" id="entrada2">
+            </div>
+            <div class="salida" id="num3">
+                
+            </div>
+            <div>
+                <button onclick="sumar()">Suma</button>
+                <button onclick="restar()">resta</button>
+                <button onclick="multi()">multiplicacion</button>
+                <button onclick="dividir()">división</button>
+            </div>
+                
     </div>
 
     <script>
-        var lorem= document.getElementById("lorem").innerHTML;
-        document.getElementById("lorem").innerHTML = "My First JavaScript";
+            function sumar() {
+                numa=document.getElementById("entrada1").value;
+                numb=document.getElementById("entrada2").value;
+                document.getElementById("num3").innerHTML = parseInt(numa) + parseInt(numb);
+            }
+            function restar() {
+                numa=document.getElementById("entrada1").value;
+                numb=document.getElementById("entrada2").value;
+                document.getElementById("num3").innerHTML = parseInt(numa) - parseInt(numb);
+            }
+            function multi() {
+                numa=document.getElementById("entrada1").value;
+                numb=document.getElementById("entrada2").value;
+                document.getElementById("num3").innerHTML = parseInt(numa) * parseInt(numb);
+            }
+            function dividir() {
+                numa=document.getElementById("entrada1").value;
+                numb=document.getElementById("entrada2").value;
+                document.getElementById("num3").innerHTML = parseInt(numa) / parseInt(numb);
+            }
+
     </script>
 </body>
 </html> 
